@@ -3,7 +3,7 @@
 """
 Created on Fri Aug  9 19:13:22 2019
 
-@author: om
+@author: SIDDHARTH
 """
 
 class person:
