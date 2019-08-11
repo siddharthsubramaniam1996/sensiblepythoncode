@@ -1,0 +1,55 @@
+import datetime
+
+
+class Person:
+    passport_id = 0
+    per_name = 'q'
+    nationality = 'w'
+    gender = 'e'
+    dob = 'r'
+    doi = 't'
+    doe = 'y'
+
+    def accept_passport_id(self):
+        self.passport_id = int(input("Passport ID: "))
+
+    def accept_person_details(self):
+        self.per_name = input("Name: ")
+        self.nationality = input("nationality: ")
+        self.gender = input("gender: ")
+
+    def accept_dateof_birth(self):
+        byear = int(input('Enter a year of birth'))
+        bmonth = int(input('Enter a month of birth'))
+        bday = int(input('Enter a day of birth'))
+        self.dob = datetime.date(byear, bmonth, bday)
+
+    def accept_dateof_issue(self):
+        iyear: int = int(input('Enter a year of issue '))
+        imonth = int(input('Enter a month of issue '))
+        iday = int(input('Enter a day of issue '))
+        self.doi = datetime.date(iyear, imonth, iday)
+
+    def accept_dateof_expiry(self):
+        eyear = int(input('Enter a year of expiry'))
+        emonth = int(input('Enter a month of expiry'))
+        eday = int(input('Enter a day of expiry'))
+        self.doe = datetime.date(eyear, emonth, eday)
+
+    def print_details(self):
+        print("\nPASSPORT ID :", self.passport_id)
+        print("\nNAME :", self.per_name)
+        print("\nNATIONALITY :", self.nationality)
+        print("\nGENDER :", self.gender)
+        print("\nDATE OF BIRTH :", self.dob)
+        print("\nDATE OF ISSUE :", self.doi)
+        print("\nDATE OF EXPIRY :", self.doe)
+
+
+output = Person()
+output.accept_passport_id()
+output.accept_person_details()
+output.accept_dateof_birth()
+output.accept_dateof_issue()
+output.accept_dateof_expiry()
+output.print_details()
