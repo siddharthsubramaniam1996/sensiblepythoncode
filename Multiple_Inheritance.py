@@ -21,5 +21,5 @@ class Leader:
         person.__init__(self,name,id)
         Employee.__init__(self,salary,designation)
         print(self.designation)
-a=Leader("Ritesh",1,25000,"Developer","80")
+a=Leader("Siddharth",1,25000,"Developer","80")
 
