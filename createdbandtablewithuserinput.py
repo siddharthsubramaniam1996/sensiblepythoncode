@@ -1,7 +1,5 @@
 #REMEMBER TO CREATE A USER IN MYSQL CALLED 'pythonuser' with the password 'Abcd1234!' AND GIVE THE USER ALL ACCESS RIGHTS IN MYSQL
 
-
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -23,7 +21,6 @@ db_connection = mysql.connector.connect(
 # creating database_cursor to perform SQL operation
 db_cursor = db_connection.cursor() 
 # executing cursor with execute method and pass SQL query
-
 
 class banavtudb:
     def dbcreation(self,x,z):
